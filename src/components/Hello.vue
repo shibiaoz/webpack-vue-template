@@ -36,7 +36,12 @@
 
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style  lang="scss" scoped>
+    .aa {
+        .bb {
+            color: red;
+        }
+    }
     .test {
         background: rgba(0, 0, 255, 0.19);
     }

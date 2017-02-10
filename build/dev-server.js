@@ -1,5 +1,4 @@
 require('./check-versions')()
-
 const exec = require('child_process').exec;
 var config = require('../config')
 if (!process.env.NODE_ENV) {

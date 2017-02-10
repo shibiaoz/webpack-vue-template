@@ -13,7 +13,7 @@ var webpackConfig = require('./webpack.prod.conf')
 
 var spinner = ora('building for production...')
 spinner.start()
-
+console.log('process.env.task => ' + process.env.task);
 var assetsPath = path.join(config.build.assetsRoot, config.build.assetsSubDirectory)
 shell.rm('-rf', assetsPath)
 shell.mkdir('-p', assetsPath)

@@ -6,7 +6,7 @@ var baseWebpackConfig = require('./webpack.base.conf')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 var apiJson = require('../api/api.json');
-var TEST_ENV = 'serve';
+var TEST_ENV = process.env.TASK_NAME || 'serve';
 var ReplaceBundleStringPlugin = require('replace-bundle-webpack-plugin');
 // add hot-reload related code to entry chunks
 Object.keys(baseWebpackConfig.entry).forEach(function (name) {
