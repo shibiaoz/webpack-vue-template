@@ -7,7 +7,7 @@
 </template>
 <script>
   export default {
-    name: 'app',
+    name: 'App',
     data() {
       return {
         routeInfo: this.$route
@@ -15,7 +15,6 @@
     },
     watch: {
       '$route': function(r) {
-          console.log(r);
           this.routeInfo = r;
       }
     }
