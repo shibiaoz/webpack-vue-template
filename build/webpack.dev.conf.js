@@ -26,7 +26,8 @@ module.exports = merge(baseWebpackConfig, {
       'process.env': config.dev.env
     }),
     new ReplaceBundleStringPlugin([{
-      partten: /{{(.+Api)}}/g,
+    //   partten: /{{(.+Api)}}/g,
+      partten:/{{([^}]+Api)\}\}/g,
       replacement: function (match, apiName) {
         console.log(apiJson[apiName] && apiJson[apiName][TEST_ENV]);
         return apiJson[apiName] && apiJson[apiName][TEST_ENV];
