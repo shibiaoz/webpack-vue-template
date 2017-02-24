@@ -12,7 +12,7 @@
                 </router-link>
             </mt-tab-item>
             <mt-tab-item id="订单">
-                订单
+                订单2
             </mt-tab-item>
             <mt-tab-item id="发现">
                 发现
@@ -43,7 +43,7 @@
                 var vm = this;
                 alert('{{getTokenApi}}');
                 request
-                    .get('{{getTokenApi}}')
+                    .post('{{getTokenApi}}')
                     .query({
                         action: 'edit',
                         city: 'London'
